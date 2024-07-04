@@ -1,43 +1,38 @@
 COMPONENTS REQUIRED
-    Arduino Board (UNO)
-    USB – A to micro-USB cable
-    Car chassis
-    L298 motor driver module
-    Flame  sensor module
-    Servo Motor
-    L293D Motor Driver Module
-    Mini DC Submersible Pump
-    12V Battery
-    On-Off- Switch
-
+Arduino Board (UNO)
+USB – A to micro-USB cable
+Car chassis
+L298 motor driver module
+Flame  sensor module
+Servo Motor
+L293D Motor Driver Module
+Mini DC Submersible Pump
+12V Battery
+On-Off- Switch
     
 CODE
     #include <Servo.h> 
     Servo myservo;
     
-    int pos = 0;
+int pos = 0;
     
-    int motor_speed = 70;  
+int motor_speed = 70;  
     
-    boolean fire = false;
+boolean fire = false;
     
-    #define Left 9      // left sensor
+#define Left 9      // left sensor
     
-    #define Right 10    // right sensor
+#define Right 10    // right sensor
     
-    #define Forward 8   //front sensor
+#define Forward 8   //front sensor
     
-    #define LM1 2       // left motor
+#define LM1 2       // left motor
     
-    #define LM2 7       // left motor
-    
-    #define RM1 4       // right motor
-    
-    #define RM2 12       // right motor
-    
-    #define pump 6
-    
-    void setup() {
+#define LM2 7       // left motor
+#define RM1 4       // right motor
+#define RM2 12       // right motor
+#define pump 6
+void setup() {
     
       pinMode(Left, INPUT);
     
